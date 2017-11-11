@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width = device-width">
+	
+	<title>Home</title>
+
+	<!-- Stylesheets -->
+	
+	<link rel="stylesheet" type="text/css" href="Styles/templates.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cloud.typography.com/6288154/777746/css/fonts.css">
+
+</head>
+
+<body id = "mainContainer">
+
+	<!-- Plugins -->
+
+	<script src="jquery.js"></script>
+
+	<!-- Header -->
+	<header id = "navbarContainer">
+		<div class = "navbarLogoHolder">
+			<img src="/Die/Images/headLogo.png" id = "headerLogo" onclick = "window.location.href='/Die/index.html'">
+		</div>
+		<nav class = "menuContainer">
+			<ul class = "headerMenu">
+				<li class = "headerMenuElements" onclick = "window.location.href='/Die/index.html'">
+					<h2 class = "menuHeaders">HOME</h2>
+					<div class = "hoverIndicator actualIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">GUITARS</h2>
+					<div class = "menuDropdown">
+						<nav class = "dropdownNav">
+							<a class = "dropdownLinks" href=""><h2>armada</h2></a>
+							<a class = "dropdownLinks" href=""><h2>luke</h2></a>
+							<a class = "dropdownLinks" href=""><h2>majesty</h2></a>
+						</nav>
+					</div>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">BASSES</h2>
+					<div class = "menuDropdown">
+						<nav class = "dropdownNav">
+							<a class = "dropdownLinks" href=""><h2>bongo</h2></a>
+							<a class = "dropdownLinks" href=""><h2>sterling</h2></a>
+							<a class = "dropdownLinks" href=""><h2>stingray</h2></a>
+						</nav>
+					</div>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">ARTISTS</h2>
+					<div class = "menuDropdown">
+						<nav class = "dropdownNav">
+							<a class = "dropdownLinks" href=""><h2>jason richardson</h2></a>
+							<a class = "dropdownLinks" href="/Die/Pages/petrucci.html"><h2>john petrucci</h2></a>
+							<a class = "dropdownLinks" href=""><h2>adam levine</h2></a>
+						</nav>
+					</div>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">BLOG</h2>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements" onclick = "window.location.href='/Die/Pages/about.html'">
+					<h2 class = "menuHeaders">ABOUT</h2>
+					<div class = "hoverIndicator"></div>
+				</li>
+			</ul>
+		</nav>
+		
+		<div id = "headerSearchContainer">
+			<input type="text" input = "headerSearchInput" placeholder = "Search">
+			<i class = "fa fa-search submitHeaderInput"></i>
+		</div>
+
+	</header>
+	
+	<div id = "headerPlaceholder">
+
+	</div>
+
+<!-- Footer -->
+
+	<footer id = "footerContainer">
+		<nav id = "footerNavsContainer">
+			<div id = "supportContainer">
+				<div class = "footerNav">
+					<h2 class = "footerNavHeader">Support</h2>
+					<div class = "footerLinksContainer">
+						<a class = "footerNavLinks" href = "">About</a>
+						<a class = "footerNavLinks" href = "">Careers</a>
+						<a class = "footerNavLinks" href = "">Contact Us</a>
+						<a class = "footerNavLinks" href = "">Ernie Ball</a>
+						<a class = "footerNavLinks" href = "">International</a>
+						<a class = "footerNavLinks" href = "">Sitemap</a>
+					</div>
+				</div>
+			</div>
+			<div id = "companyContainer">
+				<div class = "footerNav">
+					<h2 class = "footerNavHeader">Company</h2>
+					<div class = "footerLinksContainer">
+						<a class = "footerNavLinks" href = "">FAQ</a>
+						<a class = "footerNavLinks" href = "">Forums</a>
+						<a class = "footerNavLinks" href = "">Warranty Info</a>
+						<a class = "footerNavLinks" href = "">Store Locator</a>
+						<a class = "footerNavLinks" href = "">Privacy Policy</a>
+						<a class = "footerNavLinks" href = "">Terms & Conditions</a>
+					</div>
+				</div>
+			</div>
+
+			<div id = "mapContainer">
+			
+			</div>
+		</nav>
+	</footer>
+
+	<script type="text/javascript">		
+    function initMap() {
+        var bucharest = {lat: 44.439663, lng: 26.096306};
+       	var map = new google.maps.Map(document.getElementById('mapContainer'), {
+          zoom: 11,
+          center: bucharest
+        });
+        var marker = new google.maps.Marker({
+          position: bucharest,
+          map: map
+        });
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDotbEKq-5hqpoMsc3GXPrdn-8vbwPEgWg&callback=initMap">
+    </script>
+
+</body>
+</html>

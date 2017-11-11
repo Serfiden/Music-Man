@@ -1,0 +1,126 @@
+@keyframes hoverButton {
+	from {background-color: black;}
+	to {background-color: #262626;}
+}
+
+.homeSlideshow {
+	max-width:inherit;
+	position:absolute;
+	opacity:0;
+	top:0;
+	left:0;
+}
+
+.transitionLeft {
+	position:absolute;
+	z-index:1;
+	height:inherit;
+	width:5%;
+	height:100%;
+	left:0;
+	top:0;
+}
+
+.transitionRight {
+	position:absolute;
+	z-index:1;
+	height:inherit;
+	width:5%;
+	height:100%;
+	right:0;
+	top:0;
+}
+
+.transitionLeft:hover .transitionArrow {
+	font-weight:900;
+	cursor:pointer;
+}
+
+.transitionRight:hover .transitionArrow {
+	font-weight:900;
+	cursor:pointer;
+}
+
+.transitionArrow {
+	position:relative;
+	color:white;
+	font-size:50px;
+	white-space:nowrap;
+	top:44%;
+	margin:auto;
+	text-align:center;
+}
+
+#topSlideshowBuy {
+	position:absolute;
+	background-color:black;
+	z-index:1;
+	border:2px solid white;
+	text-align:center;
+	font-size:19px;
+	font-weight:600;
+	letter-spacing: 1px;
+	color:white;
+	bottom:18%;
+	right:8%;
+	width:160px;
+	height:60px;
+}
+
+#topSlideshowBuy:hover {
+	cursor:pointer;
+	animation-name:hoverButton;
+	animation-duration:1s;
+	animation-fill-mode: forwards;
+}
+
+#bulletsAbsoluteContainer {
+	display:inline-block;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	width:100%;
+	height:5%;
+	text-align:center;
+}
+
+#slideshowBulletsContainer {
+	display:inline-block;
+	height:100%;
+}
+
+.slideshowBullets {
+	display:inline-block;
+	border-radius:50%;
+	background-color:#999999;
+	opacity:.5;
+	margin-right:10px;
+	width:12px;
+	height:12px;
+}
+
+.activeBullet {
+	background-color: #f2f2f2;
+}
+
+/*.homeSlideshow:nth-of-type(1){
+	position:relative;
+	opacity:1;
+}*/
+
+#slideshow1 {
+	position:relative;
+	opacity:1;
+}
+
+.homeSlideshow > img {
+	max-width:inherit;
+}
+
+/* SLIDESHOW SLIDING BOI */
+
+.slideshowBullets:hover {
+	transition: all .25s;
+	cursor:pointer;
+	background-color: #f2f2f2;
+}

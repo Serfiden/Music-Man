@@ -1,0 +1,135 @@
+#aboutBannerContainer {
+	/*margin: 0 auto;	
+	display: flex;
+	z-index:-1;
+  	justify-content: center;
+ 	align-items: center;
+  	overflow:auto;
+  	text-align:center;*/
+}
+
+#absoluteTitleContainer {
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	text-align:center;
+}
+
+#aboutBannerTitle {
+	display:inline-block;
+	font-size:60px;
+	color:white;
+	font-weight:900;
+	white-space:nowrap;
+	vertical-align:middle;
+	max-height:100%;
+}
+
+
+#aboutBanner {	
+	-webkit-filter: brightness(80%);
+	z-index:-1;
+}
+
+
+.presentationContainer {
+	width:100%;
+	margin-top:100px;
+}
+
+.presentationText {
+	text-align:center;
+	margin:0 auto;
+	width:50%;
+	color:#333; 
+}
+
+#presentationHeader {
+	position:relative;
+	text-transform:uppercase;
+	letter-spacing: 2px;
+	text-align:center;
+	font-stretch:extra-expanded;
+	font-size:38px;
+	font-weight:100 !important;
+	width:100%;
+	margin:0;
+}
+
+#presentationSection {
+	font-style:normal;
+	font-weight:100 !important;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom:16px;
+}
+
+.galleryContainer {
+	margin-top:50px;
+	height:500px;
+	max-height:500px;
+	text-align:center;
+	margin-bottom:32px;
+}
+
+.galleryPersonContainer {
+	position:relative;
+	max-width:23%;
+	max-height:500px;
+	overflow:hidden;
+	display:inline-block;
+	margin-left:40px;
+}
+
+.galleryImageContainer {
+	position:relative;
+	max-width:100%;
+	max-height:400px;
+	overflow:hidden;
+}
+
+.galleryImage {
+	max-width:100%;
+	max-height:inherit;
+	transition: all .5s;
+	transform: scale(1);
+	-webkit-filter:brightness(70%);
+}
+
+.galleryPersonContainer:hover .galleryImage {
+	transition: all .5s;
+	transform: scale(1.1);
+	-webkit-filter: brightness(100%);
+}
+
+.galleryDescription {
+	position:relative;
+	margin-top:5px;
+	width:100%;
+	height:100%;
+	text-align:left;
+	letter-spacing:.3px;
+	font-weight:100;
+	color:#737373;
+}
+
+.galleryOverhead {
+	position:absolute;
+	display:block;
+	text-align:center;
+	vertical-align: middle;
+	z-index:1;
+	letter-spacing:.3px;
+	font-weight:100;
+	color:#737373;
+}
+
+.galleryDescriptionHeader {
+	color:#595959;
+	letter-spacing:.5px;
+	font-weight:600;
+	margin-bottom:0px;
+}
+

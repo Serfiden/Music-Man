@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+	<meta name = "viewport" content = "width = device-width">
+	
+	<title>About</title>
+
+	<!-- Stylesheets -->
+
+	<link rel="stylesheet" type="text/css" href="/Die/Styles/templates.css">
+	<link rel = "stylesheet" type = "text/css" href = "/Die/Styles/aboutStyle.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cloud.typography.com/6288154/777746/css/fonts.css">	
+	
+</head>
+
+<body id = "mainContainer">
+
+<!-- Header -->
+	<header id = "navbarContainer">
+		<div class = "navbarLogoHolder">
+			<img src="/Die/Images/headLogo.png" id = "headerLogo" onclick = "window.location.href='/Die/index.html'">
+		</div>
+		<nav class = "menuContainer">
+			<ul class = "headerMenu">
+				<li class = "headerMenuElements" onclick = "window.location.href='/Die/index.html'">
+					<h2 class = "menuHeaders">HOME</h2>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">GUITARS</h2>
+					<div class = "menuDropdown">
+						<nav class = "dropdownNav">
+							<a class = "dropdownLinks" href=""><h2>armada</h2></a>
+							<a class = "dropdownLinks" href=""><h2>luke</h2></a>
+							<a class = "dropdownLinks" href=""><h2>majesty</h2></a>
+						</nav>
+					</div>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">BASSES</h2>
+					<div class = "menuDropdown">
+						<nav class = "dropdownNav">
+							<a class = "dropdownLinks" href=""><h2>bongo</h2></a>
+							<a class = "dropdownLinks" href=""><h2>sterling</h2></a>
+							<a class = "dropdownLinks" href=""><h2>stingray</h2></a>
+						</nav>
+					</div>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">ARTISTS</h2>
+					<div class = "menuDropdown">
+						<nav class = "dropdownNav">
+							<a class = "dropdownLinks" href=""><h2>jason richardson</h2></a>
+							<a class = "dropdownLinks" href="/Die/Pages/petrucci.html"><h2>john petrucci</h2></a>
+							<a class = "dropdownLinks" href=""><h2>adam levine</h2></a>
+						</nav>
+					</div>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements">
+					<h2 class = "menuHeaders">BLOG</h2>
+					<div class = "hoverIndicator"></div>
+				</li>
+				<li class = "headerMenuElements" onclick = "window.location.href='/Die/Pages/about.html'">
+					<h2 class = "menuHeaders">ABOUT</h2>
+					<div class = "hoverIndicator actualIndicator"></div>
+				</li>
+			</ul>
+		</nav>
+		
+		<div id = "headerSearchContainer">
+			<input type="text" input = "headerSearchInput" placeholder = "Search">
+			<i class = "fa fa-search submitHeaderInput"></i>
+		</div>
+
+	</header>
+
+
+	<div id = "headerPlaceholder">
+
+	</div>
+	
+<!-- Family Banner -->
+
+<section id = "familyBanner">
+	<div class = "topSlideshowContainer" id = "aboutBannerContainer">
+		<img src = "/Die/Images/aboutBanner.jpg" class = "slideshow" id = "aboutBanner">
+		<div id = "absoluteTitleContainer">
+			<div id = "aboutBannerTitle">
+				<h1 style = "max-height:inherit; height:100%;">MEET THE FAMILY</h1>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Actual presentation -->
+
+<section id = "presetation">
+	<div class = "presentationContainer">
+		<article class = "presentationText">
+			<div style = "font-stretch: extra-expanded;width:100%">
+				<p id = "presentationHeader">California heritage since 1974</p>
+			</div>
+			<section id = "presentationSection"><br><br>
+				Originally founded in 1974, Music Man built its name leading an industry revolution, introducing active electronics on its production instruments. As part of the team during the 70’s, Sterling Ball played an important role on the design and development of the iconic StingRay basses.
+			<br><br>
+				Officially purchasing the company in 1984, Sterling, joined later by his sons Scott and Brian, has built a team of dedicated professionals who collectively share a common goal: building the highest level of hand-crafted instruments available.
+			<br><br>
+				Shipping to more than 135 countries from the Central Coast of California, the brand continues to expand its reach worldwide based on the strict quality standards, innovative design and the finest craftsmanship it is known for.
+			</section>	
+		</article>
+	</div>
+</section>
+
+<!-- Gallery -->
+
+<section id = "gallery">
+
+	<div class = "galleryContainer">
+		<div class = "galleryPersonContainer">
+			<div class = "galleryImageContainer">
+				<img src="/Die/Images/gallery1.jpg" class = "galleryImage">
+			</div>
+
+			 <div class = "galleryDescription">
+				<h2 class = "galleryDescriptionHeader">STERLING BALL</h2>
+				CEO + Chief Designer
+			</div> 
+		</div>
+		<div class = "galleryPersonContainer">
+			<div class = "galleryImageContainer">
+				<img src="/Die/Images/gallery2.jpg" class = "galleryImage">
+			</div>
+			<div class = "galleryDescription">
+				<h2 class = "galleryDescriptionHeader">BRIAN BALL</h2>
+				President
+			</div>
+		</div>
+		<div class = "galleryPersonContainer">
+			<div class = "galleryImageContainer">
+				<img src="/Die/Images/gallery3.jpg" class = "galleryImage">
+			</div>
+			<div class = "galleryDescription">
+				<h2 class = "galleryDescriptionHeader">SCOTT BALL</h2>
+				Vice President
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- Footer -->
+
+	<footer id = "footerContainer">
+		<nav id = "footerNavsContainer">
+			<div id = "supportContainer">
+				<div class = "footerNav">
+					<h2 class = "footerNavHeader">Support</h2>
+					<div class = "footerLinksContainer">
+						<a class = "footerNavLinks" href = "">About</a>
+						<a class = "footerNavLinks" href = "">Careers</a>
+						<a class = "footerNavLinks" href = "">Contact Us</a>
+						<a class = "footerNavLinks" href = "">Ernie Ball</a>
+						<a class = "footerNavLinks" href = "">International</a>
+						<a class = "footerNavLinks" href = "">Sitemap</a>
+					</div>
+				</div>
+			</div>
+			<div id = "companyContainer">
+				<div class = "footerNav">
+					<h2 class = "footerNavHeader">Company</h2>
+					<div class = "footerLinksContainer">
+						<a class = "footerNavLinks" href = "">FAQ</a>
+						<a class = "footerNavLinks" href = "">Forums</a>
+						<a class = "footerNavLinks" href = "">Warranty Info</a>
+						<a class = "footerNavLinks" href = "">Store Locator</a>
+						<a class = "footerNavLinks" href = "">Privacy Policy</a>
+						<a class = "footerNavLinks" href = "">Terms & Conditions</a>
+					</div>
+				</div>
+			</div>
+
+			<div id = "mapContainer">
+			
+			</div>
+		</nav>
+	</footer>
+
+	<script type="text/javascript">		
+    function initMap() {
+        var bucharest = {lat: 44.439663, lng: 26.096306};
+       	var map = new google.maps.Map(document.getElementById('mapContainer'), {
+          zoom: 11,
+          center: bucharest
+        });
+        var marker = new google.maps.Marker({
+          position: bucharest,
+          map: map
+        });
+    }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDotbEKq-5hqpoMsc3GXPrdn-8vbwPEgWg&callback=initMap">
+    </script>
+</body>
+</html>
