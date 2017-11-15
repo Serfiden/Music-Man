@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="Styles/templates.css">
 	<link rel="stylesheet" type="text/css" href="Styles/topSlideshowStyle.css">
 	<link rel="stylesheet" type="text/css" href="Styles/homeStyle.css">
+	<link rel="stylesheet" type="text/css" href="Styles/responsiveHeader.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cloud.typography.com/6288154/777746/css/fonts.css">
@@ -26,11 +27,15 @@
 	<!-- Header -->
 	<header id = "navbarContainer">
 		<div class = "navbarLogoHolder">
-			<img src="/Die/Images/headLogo.png" id = "headerLogo" onclick = "window.location.href='/Die/index.html'">
+			<img src="/Music-Man/Images/headLogo.png" id = "headerLogo" onclick = "window.location.href='/Music-Man/index.html'">
+			<img src = "/Music-Man/Images/headSmallLogo.png" id = "smallHeadLogo" onclick = "window.location.href = '/Music-Man/index.html'">
 		</div>
+
+		<!-- Desktop Menu -->
+
 		<nav class = "menuContainer">
 			<ul class = "headerMenu">
-				<li class = "headerMenuElements" onclick = "window.location.href='/Die/index.html'">
+				<li class = "headerMenuElements" onclick = "window.location.href='/Music-Man/index.html'">
 					<h2 class = "menuHeaders">HOME</h2>
 					<div class = "hoverIndicator actualIndicator"></div>
 				</li>
@@ -61,7 +66,7 @@
 					<div class = "menuDropdown">
 						<nav class = "dropdownNav">
 							<a class = "dropdownLinks" href=""><h2>jason richardson</h2></a>
-							<a class = "dropdownLinks" href="Pages/petrucci.html"><h2>john petrucci</h2></a>
+							<a class = "dropdownLinks" href="/Music-Man/Pages/petrucci.html"><h2>john petrucci</h2></a>
 							<a class = "dropdownLinks" href=""><h2>adam levine</h2></a>
 						</nav>
 					</div>
@@ -71,21 +76,32 @@
 					<h2 class = "menuHeaders">BLOG</h2>
 					<div class = "hoverIndicator"></div>
 				</li>
-				<li class = "headerMenuElements" onclick = "window.location.href='/Die/Pages/about.html'">
+				<li class = "headerMenuElements" onclick = "window.location.href='/Music-Man/Pages/about.html'">
 					<h2 class = "menuHeaders">ABOUT</h2>
 					<div class = "hoverIndicator"></div>
 				</li>
 			</ul>
 		</nav>
-		
+
 		<div id = "headerSearchContainer">
 			<input type="text" input = "headerSearchInput" placeholder = "Search">
 			<i class = "fa fa-search submitHeaderInput"></i>
 		</div>
 
+
+		<!-- Mobile Menu -->
+
+		<div id = "mobileMenuContainer">
+			<i class = "fa fa-bars fa-4" id = "hoverableMenu"></i>
+		</div>
+
 	</header>
 	
 	<div id = "headerPlaceholder">
+
+	</div>
+
+	<div id = "mobilePlaceholder">
 
 	</div>
 
@@ -159,16 +175,13 @@
 					</div>
 				</div>
 			</div>
-
-			<div id = "mapContainer">
-			
-			</div>
 		</nav>
 
+		<div id = "mapContainer">
+			
+		</div>
 		
-
 	</footer>
-
 	<!-- Scripts -->
 
 	<script type="text/javascript">
